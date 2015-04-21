@@ -10,5 +10,6 @@ Router.map(function() {
 });
 
 export default Router.map(function() {
+  this.route('todos');
 });
 

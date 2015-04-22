@@ -1,1 +1,0 @@
-/Users/Peter/Makers/ember_london/todo-cli/app/models/todo.js

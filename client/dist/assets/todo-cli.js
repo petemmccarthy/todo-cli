@@ -4,9 +4,18 @@
 
 define('todo-cli/adapters/application', ['exports', 'ember-data'], function (exports, DS) {
 
-	'use strict';
+  'use strict';
 
-	exports['default'] = DS['default'].FixtureAdapter.extend({});
+  // old Fixture serving static data no longer needed
+  // import DS from 'ember-data';
+
+  // export default DS.FixtureAdapter.extend({
+  // });
+
+  // new persistent data
+  exports['default'] = DS['default'].RESTAdapter.extend({
+    host: 'http://localhost:1337'
+  });
 
 });
 define('todo-cli/app', ['exports', 'ember', 'ember/resolver', 'ember/load-initializers', 'todo-cli/config/environment'], function (exports, Ember, Resolver, loadInitializers, config) {
@@ -1298,7 +1307,7 @@ catch(err) {
 if (runningTests) {
   require("todo-cli/tests/test-helper");
 } else {
-  require("todo-cli/app")["default"].create({"name":"todo-cli","version":"0.0.0.927885b5"});
+  require("todo-cli/app")["default"].create({"name":"todo-cli","version":"0.0.0.6028a2b7"});
 }
 
 /* jshint ignore:end */

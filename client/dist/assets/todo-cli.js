@@ -1298,7 +1298,7 @@ catch(err) {
 if (runningTests) {
   require("todo-cli/tests/test-helper");
 } else {
-  require("todo-cli/app")["default"].create({"name":"todo-cli","version":"0.0.0.65b92207"});
+  require("todo-cli/app")["default"].create({"name":"todo-cli","version":"0.0.0.927885b5"});
 }
 
 /* jshint ignore:end */

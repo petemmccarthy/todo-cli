@@ -1,7 +1,6 @@
 # Todo-cli
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a basic ToDo list built with Ember.js front-end (client) and Sails.js back-end (server).
 
 ## Prerequisites
 
@@ -15,33 +14,29 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* change into the new directory
+* `git clone https://github.com/petemmccarthy/todo-cli.git`
+* `cd todo-cli`
 * `npm install`
 * `bower install`
+* `npm install -g phantomjs`
+* `npm install -g ember-cli`
+* `npm install -g sails`
 
-## Running / Development
+## Running
 
-* `ember server`
+Using two separate tabs, in the first one...
+
+* `cd client`
+* `ember serve`
+
+And in the second...
+* `cd server`
+* `sails lift`
+
+Then...
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
+...and you should see an empty ToDo list!
 
 ## Further Reading / Useful Links
 
